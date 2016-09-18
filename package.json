@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --hot --content-base dist/",
     "eslint": "eslint ./src --ext .js --ext .jsx --cache || true",
     "eslint:table": "eslint ./src --ext .js --ext .jsx --cache --format table || true",
-    "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true"
+    "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true",
+    "commit": "git-cz"
   },
   "author": "Ernesto R. C. Pereda <ercp42@gmail.com>",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "babel-preset-es2015": "6.14.0",
     "babel-preset-react": "6.11.1",
     "clean-webpack-plugin": "0.1.10",
+    "commitizen": "2.8.6",
     "copy-webpack-plugin": "3.0.1",
     "css-loader": "0.25.0",
     "eslint": "3.5.0",
@@ -41,5 +43,10 @@
     "postcss-custom-properties": "5.0.1",
     "postcss-loader": "0.13.0",
     "style-loader": "0.13.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
