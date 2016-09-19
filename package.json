@@ -11,6 +11,9 @@
     "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true",
     "commit": "git-cz"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Ernesto R. C. Pereda <ercp42@gmail.com>",
   "license": "MIT",
   "dependencies": {
