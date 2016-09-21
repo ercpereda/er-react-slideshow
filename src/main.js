@@ -4,12 +4,12 @@ import Slideshow from './Slideshow';
 
 const data = [
   {
-    img: 'img.png',
-    caption: 'Image 1'
+    img: 'https://www.bing.com/az/hprichbg/rb/Castelmezzano_EN-US11750585825_1920x1080.jpg',
+    caption: 'Castelmezzano, Italy'
   },
   {
-    img: 'img1.png',
-    caption: 'Image 2'
+    img: 'https://www.bing.com/az/hprichbg/rb/LadakhIndia_EN-US10128021714_1920x1080.jpg',
+    caption: 'Ladakh, India'
   }
 ];
 
