@@ -7,11 +7,14 @@ var CopyPlugin = require('copy-webpack-plugin');
 var config = {
   cache: true,
   
-  entry: './src/main.js',
+  entry: {
+    demo: './src/main.js',
+    component: ['./src/Slideshow.js']
+  },
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
 
   devServer: {
@@ -67,7 +70,7 @@ var config = {
       { from: 'src/img.png' },
       { from: 'src/img1.png' }
     ]),
-    new ExtractTextPlugin('bundle.css')
+    new ExtractTextPlugin('[name].css')
   ]
 };
 
