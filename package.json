@@ -10,7 +10,7 @@
     "eslint:table": "eslint ./src --ext .js --ext .jsx --cache --format table || true",
     "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true",
     "commit": "git-cz",
-    "prepublish": "build"
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
