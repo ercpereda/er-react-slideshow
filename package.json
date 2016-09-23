@@ -2,14 +2,15 @@
   "name": "er-react-slideshow",
   "version": "0.0.4",
   "description": "",
-  "main": "dist/component.js",
+  "main": "dist/er-react-slideshow.js",
   "scripts": {
     "start": "webpack-dev-server --hot --content-base dist/",
     "build": "webpack",
     "eslint": "eslint ./src --ext .js --ext .jsx --cache || true",
     "eslint:table": "eslint ./src --ext .js --ext .jsx --cache --format table || true",
     "eslint:summary": "eslint ./src --ext .js --ext .jsx --cache --format 'node_modules/eslint-friendly-formatter' || true",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prepublish": "build"
   },
   "files": [
     "dist"

@@ -7,14 +7,19 @@ var CopyPlugin = require('copy-webpack-plugin');
 var config = {
   cache: true,
   
-  entry: {
-    demo: './src/main.js',
-    component: ['./src/Slideshow.js']
-  },
+  entry: './src/Slideshow.js',
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: 'er-react-slideshow.js',
+    libraryTarget: 'commonjs'
+  },
+
+  target: 'node',
+
+  externals: {
+    'react': 'react',
+    'classnames': 'classnames'
   },
 
   devServer: {
@@ -67,10 +72,8 @@ var config = {
     new CopyPlugin([
       { from: 'src/index.html' },
       { from: 'src/favicon.ico' },
-      { from: 'src/img.png' },
-      { from: 'src/img1.png' }
     ]),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('er-react-slideshow.css')
   ]
 };
 
